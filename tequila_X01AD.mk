@@ -21,25 +21,26 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from X01AD device
 $(call inherit-product, device/asus/X01AD/device.mk)
 
-# Inherit some common OctaviOS stuff.
-$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
+# Inherit some common TequilaOS stuff.
+$(call inherit-product, vendor/tequila/config/common_full_phone.mk)
 
 # Set shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_FACE_UNLOCK_SUPPORTED := true
-
-# OctaviOS specific flags
-OCTAVI_BUILD_TYPE := UNOFFICIAL
-OCTAVI_MAINTAINER := Hirokixd
-TARGET_BOOT_ANIMATION_RES := 720
+TARGET_USE_PIXEL_FINGERPRINT := true
+TARGET_BUILD_APERTURE_CAMERA := true
+TARGET_CORE_GMS := true
+USE_AOSP_CLOCK := true
+TARGET_INCLUDE_STOCK_ARCORE := false
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
-TARGET_SUPPORTS_QUICK_TAP := false
-WITH_GAPPS := false
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_OPTOUT_GOOGLE_TELEPHONY := true
 
 # Device identifiers.
-PRODUCT_NAME := octavi_X01AD
+PRODUCT_NAME := tequila_X01AD
 PRODUCT_DEVICE := X01AD
 PRODUCT_MANUFACTURER := asus
 PRODUCT_BRAND := asus
@@ -52,9 +53,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=X01A_1
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="cheetah-user 13 TQ1A.230205.002 9471150 release-keys"
-    
-BUILD_FINGERPRINT := "google/cheetah/cheetah:13/TQ1A.230205.002/9471150:user/release-keys"
+    PRIVATE_BUILD_DESC="msm8953_64-user 10 WW_Phone-202005071625 17.2018.2004.31-20200507 release-keys"
 
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.build.fingerprint=$(BUILD_FINGERPRINT)
+BUILD_FINGERPRINT := "asus/WW_X01AD/ASUS_X01A_1:10/WW_Phone-202005071625/17.2018.2004.31-20200507:user/release-keys"
