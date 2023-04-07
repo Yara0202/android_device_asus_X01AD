@@ -388,12 +388,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power@1.0.vendor \
     android.hardware.power@1.1.vendor \
-    android.hardware.power@1.2.vendor \
-    android.hardware.power-service.X01AD-libperfmgr
-
-PRODUCT_COPY_FILES += \
-   $(LOCAL_PATH)/power-libperfmgr/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
-
+    android.hardware.power@1.2.vendor
+    
 # Properties
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
