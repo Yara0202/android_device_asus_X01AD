@@ -15,6 +15,10 @@ vendor/lib64/libfastcvopt.so
 vendor/lib64/libmdsprpc.so
 vendor/lib64/libsdsprpc.so
 
+# Hals
+vendor/lib64/libqdMetaData.so
+vendor/lib/libqdMetaData.so
+
 # ADSP-Modules
 vendor/lib/rfsa/adsp/libadsp_fd_skel.so
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
@@ -2749,3 +2753,5 @@ vendor/lib64/libthermalclient.so
 vendor/bin/time_daemon
 vendor/lib/libtime_genoff.so
 vendor/lib64/libtime_genoff.so
+
+
