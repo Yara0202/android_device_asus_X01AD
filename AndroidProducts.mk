@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/tequila_X01AD.mk
+    $(LOCAL_DIR)/pixys_X01AD.mk
 
 COMMON_LUNCH_CHOICES := \
-    tequila_X01AD-user \
-    tequila_X01AD-userdebug \
-    tequila_X01AD-eng
+    pixys_X01AD-user \
+    pixys_X01AD-userdebug \
+    pixys_X01AD-eng
