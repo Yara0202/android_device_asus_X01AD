@@ -139,6 +139,9 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_X01AD
 TARGET_RECOVERY_DEVICE_MODULES := libinit_X01AD
 
+# power
+TARGET_TAP_TO_WAKE_NODE := "/proc/tpd_gesture"
+
 # Partitions - SAR
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
