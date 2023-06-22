@@ -48,9 +48,10 @@ TARGET_SCREEN_WIDTH := 720
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
-# Soong Namespace
-PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+PRODUCT_SOONG_NAMESPACES += device/asus/X01AD \
+                            hardware/google/interfaces \
+                            hardware/google/pixel \
+                            hardware/qcom-caf/msm8996
 
 # Permissions
 PRODUCT_COPY_FILES += \
