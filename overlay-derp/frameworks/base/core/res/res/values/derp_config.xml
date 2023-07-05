@@ -13,7 +13,6 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-    <integer name="config_deviceLightCapabilities">75</integer>
     
 <!-- These resources are around just to allow their values to be customized
      for different hardware and product builds.  Do not translate. -->
