@@ -27,9 +27,11 @@ $(call inherit-product, vendor/derp/config/common_full_phone.mk)
 # Set shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Pixel Flags
+# Derpfest Flags
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOT_ANIMATION_RES := 720
+# Vanilla Build
+WITH_GMS := false
 
 # Device identifiers.
 PRODUCT_NAME := derp_X01AD
