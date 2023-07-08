@@ -2,9 +2,6 @@
 # system.prop for X01AD
 #
 
-# App
-ro.launcher.blur.appLaunch=0
-
 rild.libargs=-d /dev/smd0
 persist.rild.nitz_plmn=
 persist.rild.nitz_long_ons_0=
