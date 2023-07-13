@@ -29,7 +29,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 
 # Superior Flags
 TARGET_BOOT_ANIMATION_RES := 720
-BUILD_WITH_GAPPS:= false
+BUILD_WITH_GAPPS := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Device identifiers.
 PRODUCT_NAME := superior_X01AD
