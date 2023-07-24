@@ -29,6 +29,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 
 # Derpfest Flags
 TARGET_BOOT_ANIMATION_RES := 720
+USE_LEGACY_BOOTANIMATION := true
 
 # Device identifiers.
 PRODUCT_NAME := derp_X01AD
