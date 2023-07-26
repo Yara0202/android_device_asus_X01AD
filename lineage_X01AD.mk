@@ -21,18 +21,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from X01AD device
 $(call inherit-product, device/asus/X01AD/device.mk)
 
-# Inherit some common DerpfestOS stuff.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+# Inherit some common LineageOS stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Set shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Derpfest Flags
-TARGET_BOOT_ANIMATION_RES := 720
-USE_LEGACY_BOOTANIMATION := true
-
 # Device identifiers.
-PRODUCT_NAME := derp_X01AD
+PRODUCT_NAME := lineage_X01AD
 PRODUCT_DEVICE := X01AD
 PRODUCT_MANUFACTURER := asus
 PRODUCT_BRAND := asus
